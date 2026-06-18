@@ -9,7 +9,7 @@
 </head>
 <body class="container p-5">
     <main>
-        <h1>Testes Javascript</h1>
+        <h1>Cadastro</h1>
         <div class="container">
             <form >
                 <div>
@@ -19,14 +19,27 @@
                     <input class="form-control p-1" 
                     type="nome p-1"
                     id="nome">
-
                 </div>
-                <button class="btn btn-primary p-1" onclick="imprimirNome()">Enviar dados</button>
+                <div>   
+                    <label class="form-label" for="idade">Digite a sua idade</label>
+
+                    <input class="form-control" type="idade p-1" id="idade">
+                </div>
+                <div>
+                    <label class="form-label" for="cargo">Digite o seu cargo</label>
+
+                    <input class="form-control" type="cargo p-1" id="cargo">
+                </div>
+                <div>
+                    <label class="form-label" for="departamento">Digite seu apartamento</label>
+
+                    <input class="form-control" type="departamneto p-1" id="departamento">
+                </div>
+                <button class="btn btn-primary p-1" onclick="cracharvirtual()">Enviar dados</button>
             </form>
-            <script>
-                function imprimirNome(){
-                    window.alert("Seu formulario foi enviado ")
-                }
+
+            <script src="formulario.js">
+                console.log("Usuario cadastrado");
             </script>
         </div>
     </main>
