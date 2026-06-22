@@ -7,6 +7,11 @@ function cracharvirtual(){
     let departamento = document.getElementById("departamento").value
     let boolean = document.getElementById("boolean").value
 
+    if (boolean == "sim") {
+        boolean = true
+    } else {
+        boolean = false
+    }
 
     console.log("Seu nome é: ",nome)
     console.log("Sua idade: ",idade )
