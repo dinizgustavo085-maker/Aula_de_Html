@@ -11,5 +11,9 @@ function salvarNome(){
     let textoJSON = JSON.stringify (objetonome)
     localStorage.setItem("Dados Pessoas", textoJSON)
 
+}
+
+function Apagartudo(){
+    localStorage.clear()
 
 }
