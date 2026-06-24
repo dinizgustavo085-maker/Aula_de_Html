@@ -3,30 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Teste funções</title>
 </head>
 <body>
     <main>
         <h1>Teste de funções matematica</h1>
-
-        <p>soma</p>
-        <label for="primeiro-numero">Digite um numero</label>
-        <input type="text" id="primeiro-numero">
-
-        <br>
-
-        <label for="segundo-numero">Digite um numero</label>
-        <input type="text" id="segundo-numero">
-        <br>
-        <button type="button" onclick="soma()">Soma</button>
-        <br>
-        <button type="button" onclick="divisao()">divisao</button>
-        <br>
-        <button type="button" onclick="subtracao()">subtracao</button>
-        <br>
-        <button type="button" onclick="multiplicacao()">multiplicacao</button>
-
-        <p>seu resultado é:  <strong id="resultado"></strong></p>
+        <form>
+            <div class="container">
+                <p>soma</p>
+                <label for="primeiro-numero">Digite um numero<z/label>
+                <input type="text" id="primeiro-numero">
+                <br>
+                <label for="segundo-numero">Digite um numero</label>
+                <input type="text" id="segundo-numero">
+                <br>
+                <button type="button" onclick="soma()"> Soma </button>
+                <br>
+            </div>
+        </form> 
+        <form>
+            <div class="container">
+                <br>
+                <p>subtração</p>
+                <label for="primeiro-numero-subtracao">Digite um numero<z/label>
+                <input type="text" id="primeiro-numero-subtracao">
+                <br>
+                <label for="segundo-numero-subtracao">Digite um numero</label>
+                <input type="text" id="segundo-numero-subtracao">
+                <br>
+                <button type="button" onclick="subtracao()">subtracao</button>
+                <br>
+            </div>
+        </form>
+        <form>
+            <div class="container">
+                <br>
+                <p>divisão</p>
+                <label for="primeiro-numero-divisao">Digite um numero<z/label>
+                <input type="text" id="primeiro-numero-divisao">
+                <br>
+                <label for="segundo-numero-divisao">Digite um numero</label>
+                <input type="text" id="segundo-numero-divisao">
+                <br>
+                <button type="button" onclick="divisao()">divisao</button>
+            </div>
+        </form>
+        <form>
+            <div class="container">
+                <br>
+                <p>multiplicação</p>
+                <label for="primeiro-numero-multiplicacao">Digite um numero<z/label>
+                <input type="text" id="primeiro-numero-multiplicacao">
+                <br>
+                <label for="segundo-numero-multiplicacao">Digite um numero</label>
+                <input type="text" id="segundo-numero-multiplicacao">
+                <br> 
+                <button type="button" onclick="multiplicacao()">multiplicacao</button>
+            </div>
+         <p>seu resultado é:  <strong id="resultado"></strong></p>
         <script src="js/funcao.js"></script>
     </main>
     
