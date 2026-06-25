@@ -4,96 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>Teste de fun&ccedil;&otilde;es</title>
+    <title>Teste de funções</title>
 </head>
 <body class="bg-light">
     <main class="container py-5">
-        <h1 class="text-center mb-4">Teste de fun&ccedil;&otilde;es matem&aacute;ticas</h1>
+        <h1 class="text-center mb-4">Teste de funçõeses matematicas</h1>
 
         <div class="row g-4">
             <div class="col-md-6">
                 <form class="card h-100 shadow-sm">
                     <div class="card-body">
-                        <h2 class="h5 card-title">Soma</h2>
+                        <h2 class="h5 card-title">Calculadora</h2>
 
                         <div class="mb-3">
-                            <label class="form-label" for="primeiro-numero">Digite um n&uacute;mero</label>
+                            <label class="form-label" for="primeiro-numero">Digite um numero</label>
                             <input class="form-control" type="number" id="primeiro-numero">
                         </div>
 
                         <div class="mb-3">
-                            <label class="form-label" for="segundo-numero">Digite outro n&uacute;mero</label>
+                            <label class="form-label" for="segundo-numero">Digite outro numero</label>
                             <input class="form-control" type="number" id="segundo-numero">
                         </div>
 
                         <button class="btn btn-primary w-100" type="button" onclick="soma()">Somar</button>
-                    </div>
-                </form>
-            </div>
-
-            <div class="col-md-6">
-                <form class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h2 class="h5 card-title">Subtra&ccedil;&atilde;o</h2>
-
-                        <div class="mb-3">
-                            <label class="form-label" for="primeiro-numero-subtracao">Digite um n&uacute;mero</label>
-                            <input class="form-control" type="number" id="primeiro-numero-subtracao">
-                        </div>
-
-                        <div class="mb-3">
-                            <label class="form-label" for="segundo-numero-subtracao">Digite outro n&uacute;mero</label>
-                            <input class="form-control" type="number" id="segundo-numero-subtracao">
-                        </div>
-
+                        <br>
+                        <br>
                         <button class="btn btn-primary w-100" type="button" onclick="subtracao()">Subtrair</button>
-                    </div>
-                </form>
-            </div>
-
-            <div class="col-md-6">
-                <form class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h2 class="h5 card-title">Divis&atilde;o</h2>
-
-                        <div class="mb-3">
-                            <label class="form-label" for="primeiro-numero-divisao">Digite um n&uacute;mero</label>
-                            <input class="form-control" type="number" id="primeiro-numero-divisao">
-                        </div>
-
-                        <div class="mb-3">
-                            <label class="form-label" for="segundo-numero-divisao">Digite outro n&uacute;mero</label>
-                            <input class="form-control" type="number" id="segundo-numero-divisao">
-                        </div>
-
+                        <br>
+                        <br>
                         <button class="btn btn-primary w-100" type="button" onclick="divisao()">Dividir</button>
+                        <br>
+                        <br>
+                        <button class="btn btn-primary w-100" type="button" onclick="multiplicacao()">Multiplicar</button>
+                        <br>
+                        <br>
+                        <button class="btn btn-primary w-100" type="button" onclick="apagar_historico()">Apagar</button>
                     </div>
                 </form>
             </div>
-
-            <div class="col-md-6">
-                <form class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h2 class="h5 card-title">Multiplica&ccedil;&atilde;o</h2>
-
-                        <div class="mb-3">
-                            <label class="form-label" for="primeiro-numero-multiplicacao">Digite um n&uacute;mero</label>
-                            <input class="form-control" type="number" id="primeiro-numero-multiplicacao">
-                        </div>
-
-                        <div class="mb-3">
-                            <label class="form-label" for="segundo-numero-multiplicacao">Digite outro n&uacute;mero</label>
-                            <input class="form-control" type="number" id="segundo-numero-multiplicacao">
-                        </div>
-
-                        <button class="btn btn-primary w-100" type="button" onclick="multiplicacao()">Multiplicar</button>
-                    </div>
-                </form>
             </div>
         </div>
 
-        <div class="alert alert-success text-center mt-4" role="alert">
-            Seu resultado &eacute;: <strong id="resultado"></strong>
+        <div class="alert alert-success text-center mt-1" role="alert">
+            Seu resultado é: <strong id="resultado"></strong>
         </div>
     </main>
 
