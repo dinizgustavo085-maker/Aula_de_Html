@@ -62,21 +62,33 @@ function Salvar_Historico(num1, num2, resultado){
 
 }
 
+function Imposoto(num1, taxa20, taxa90, resultado){
+    let imposto = {
+    num1: "Valor: " + num1,
+    resultado: "Resultado do imposto: "+ resultado 
+    };
+
+    console.log("Imposto: ", imposto);
+
+    let JSONimposto = JSON.parse(localStorage.getItem("Imposto")) || [];
+    JSONimposto.push(imposto);
+    localStorage.setItem("Imposto", JSON.stringify(JSONimposto));
+}
+
 function Calculoimposto(){
-    let num1 = document.getElementById("Calculo").value
+    let num1 = parseFloat(document.getElementById("Calculo").value)
+    let taxa20 = 1.2
+    let taxa90 = 1.9
     let resultado =  document.getElementById("resultado").value
 
     if (num1 <= 50){
-        resultado = num1 + (num1 * 0.2);
+        resultado = num1 * taxa20;
     }else{
-       let valor20 = num1 + (num1 * 0.2);
-       resultado = num1 + (valor20 * 0.9)
+       resultado = (num1 * taxa20)* taxa90; ;
     }
 
-    console.log("Resultado:", resultado)
-
-    
-
+    document.getElementById("resultado").innerText = resultado
+    Imposoto(num1, taxa20, taxa90, resultado)
 
 }
 
