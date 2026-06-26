@@ -25,7 +25,7 @@ function subtracao(){
 
 
 function divisao(){
-     let num1 = document.getElementById("primeiro-numero").value
+    let num1 = document.getElementById("primeiro-numero").value
     let num2 = document.getElementById("segundo-numero").value
 
     let resultado = (Number(num1) / (num2));
@@ -59,6 +59,24 @@ function Salvar_Historico(num1, num2, resultado){
     JSONhistorico.push(historico);
 
     localStorage.setItem("Historico da soma", JSON.stringify(JSONhistorico));
+
+}
+
+function Calculoimposto(){
+    let num1 = document.getElementById("Calculo").value
+    let resultado =  document.getElementById("resultado").value
+
+    if (num1 <= 50){
+        resultado = num1 + (num1 * 0.2);
+    }else{
+       let valor20 = num1 + (num1 * 0.2);
+       resultado = num1 + (valor20 * 0.9)
+    }
+
+    console.log("Resultado:", resultado)
+
+    
+
 
 }
 
