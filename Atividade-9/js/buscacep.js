@@ -4,6 +4,9 @@ function buscarcep() {
     if (cepdigitado === "") {
         return;
     }
+
+    cepdigitado = cepdigitado.replace(/\D/g, ""); // remove o hífen digitado ("mas não executou certo kkkkkk")
+
     fetch(`https://viacep.com.br/ws/${cepdigitado}/json/`)
         .then(function (resposta) {
             return resposta.json();
@@ -11,7 +14,7 @@ function buscarcep() {
         })
         .then(function (dados) {
             if (dados.erro) {
-                alert("Cep não encontrado")
+                alert("Cep não encontrado, tente novamente !");
                 return;
             }
             document.getElementById("rua").value = dados.logradouro;
@@ -21,7 +24,7 @@ function buscarcep() {
         })
 
 
-
+window.alert("Dados estão certos " + cepdigitado); // exebi a mensagem antes que valide o cep digitado
 
 }
 const campoCep = document.getElementById("cep");
